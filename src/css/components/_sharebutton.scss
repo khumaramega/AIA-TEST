@@ -1,0 +1,81 @@
+.share-button {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    height: 50px;
+    margin: 10px auto;
+    overflow: visible;
+    text-align: right;
+    width: 60%;
+
+    .share-button-hover {
+        visibility: hidden;
+
+        .social-buttons {
+            background-color: $maroon;
+            display: flex;
+            justify-content: center;
+            left: 90px;
+            padding: 5px 0;
+            position: relative;
+            top: -100px;
+            width: 250px;
+
+            div {
+                text-align: center;
+            }
+
+            p {
+                background-color: white;
+                color: black;
+                margin: 5px 10px;
+                padding: 10px 5px;
+                text-align: center;
+                width: 50px;
+            }
+
+            img {
+                max-width: 60px;
+            }
+
+        }
+
+        .arrow-down {
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid $maroon;
+            height: 0;
+            left: 280px;
+            position: relative;
+            top: -100px;
+            width: 0;
+        }
+
+    }
+
+    &:hover .share-button-hover {
+        visibility: visible;
+    }
+
+    button {
+        background-color: $maroon;
+        border: none;
+        color: white;
+        display: block;
+        height: 40px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        min-width: 100px;
+        padding: 10px 15px;
+        -webkit-appearance: none;
+    }
+
+    button:hover {
+        color: $yellow;
+        cursor: pointer;
+    }
+
+    @media (max-width: 750px) {
+        width: 95%;
+    }
+}
